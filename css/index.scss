@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+  }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* ----------------------------reset---------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap');
+*,body{
+    font-family: 'Microsoft JhengHei', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.2;
+}
+
+
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+  }
+  .headerBar{
+    background-color: #f6f6f6;
+    ul{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+    }
+    li{
+      margin: 10px 0;
+    }
+    li:nth-child(1){
+      border-right: 1px solid #cccccc;
+    }
+    a{
+      display: block;
+      text-decoration: none;
+      color: #4460a0;
+      padding: 0 10px;
+      &:hover{
+        color: #15a087;
+      }
+    }
+  }
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 a{
+       display: block;
+       background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+       width: 224px;
+       height: 50px;
+       text-indent: 101%;
+       white-space: nowrap;
+       overflow: hidden;
+    }
+    ul{
+      display: flex;
+      list-style: none;
+      li{
+        margin: 0 10px;
+      }
+      a{
+        display: block;
+        padding: 10px 10px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #15a087;
+        border-bottom: 5px solid transparent;
+        &:hover{
+        border-bottom: 5px solid #15a087;
+        }
+      }
+    }
+  }
+.banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    h2{
+      width: 100%;
+      position: absolute;
+      padding: 30px;
+      font-size: 2.25rem;
+      font-weight: 700;
+      background: rgba(0,0,0,0.2);
+      color: #ffffff;
+    }
+  }
+.course{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  &-item{
+    width: 300px;
+    box-shadow: 3px 3px 5px silver;
+    padding: 10px;
+    ul{
+      list-style: circle;
+      padding-left: 40px;
+    }
+  }
+  h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  p{
+    padding: 10px 0;
+  }
+  &-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+}
+.compare{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  th{
+    background: #f5f5f5;
+    text-align:left;
+  }
+  th ,td {
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 100px 10px 20px;
+  }
+  .perfect{
+    color: #3cb371;
+  }
+}
+.connect{
+  background: linear-gradient(#00644b,#009771);
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.5;
+    color: #ffffff;
+    padding: 20px;
+  }
+  form{
+    display: flex;
+    color: #ffffff;
+    padding: 20px;
+    textarea{
+      width: 50%;
+    }
+    .connect-data{
+      width: 50%;
+      margin-left: 40px;
+    }
+    .user{
+      margin-bottom: 20px;
+      input{
+        width: 100%;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+      }
+    } 
+    .submitbtn{
+      display: block;
+      background: #00cc98;
+      color: #ffffff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px 25px;
+      border-radius: 5px;
+      margin-left: auto;
+    }
+  }
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  ul{
+    a{
+      text-decoration: none;
+      color: #cd3b72;
+    }
+  }
+}
