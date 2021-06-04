@@ -308,7 +308,16 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.connect form .submitbtn {
+.connect .submitbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.connect .submitbtn input {
   display: block;
   background: #00cc98;
   color: #ffffff;
@@ -318,6 +327,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 25px;
   border-radius: 5px;
   margin-left: auto;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.connect .submitbtn input:hover {
+  background: #7cff25;
+  color: #018f6b;
 }
 
 .footer {
